@@ -26,9 +26,4 @@ const data = [
 
 export default data;
 
-//setSelect(select === curId ? null : curId);
 
-// setSelect(curId);
-// if (select === curId) {
-//   setSelect(!select);
-// }
