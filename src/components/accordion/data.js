@@ -26,4 +26,5 @@ const data = [
 
 export default data;
 
-
+//28. indexId ===-1
+//57. multi.includes(dataEl.id)   same as   multi.indexOf(dataEl.id)!== -1

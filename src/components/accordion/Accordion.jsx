@@ -19,11 +19,15 @@ const Accordion = () => {
 
   const multiSelect = curId => {
     const accMulti = [...multi];
-    const indexId = accMulti.indexOf(curId); 
+    const indexId = accMulti.indexOf(curId);
 
-    if (enableMulti) {
-      accMulti.includes(curId) === false ? accMulti.push(curId) : accMulti.splice(indexId, 1);
-    }
+    // if (enableMulti) {
+    //   accMulti.includes(curId) === false ? accMulti.push(curId) : accMulti.splice(indexId, 1);
+    // }
+
+    if (accMulti.includes(curId) === false) accMulti.push(curId);
+    else accMulti.splice(indexId, 1);
+
     setMulti(accMulti);
   };
   console.log('accMulti', multi);
@@ -74,3 +78,5 @@ const Accordion = () => {
 };
 
 export default Accordion;
+
+
